@@ -1,5 +1,9 @@
-#from functions import get_todos, write_todos
+# from functions import get_todos, write_todos
 import functions
+import time
+
+now = time.strftime("%b %d,%Y %H:%M:%S")
+print(now)
 
 while True:
 
@@ -53,7 +57,7 @@ while True:
 
     elif userAction.startswith('edit'):
         try:
-            # number = int(input("Enter the index of the todo to edit: "))
+
             number = int(userAction[5:])
             number = number - 1
 
@@ -70,8 +74,6 @@ while True:
 
     elif userAction.startswith('complete'):
         try:
-
-            # number = int(input("Enter the index of the todo to edit: "))
 
             number = int(userAction[9:])
 
@@ -108,20 +110,4 @@ while True:
 
 
 
-"""
-    match userAction:
 
-        case "add":
-            todo = input("Enter a todo: ")
-            todos.append(todo)
-        case "show" | "display":
-            for item in todos:
-                item = item.title()
-                print(item)
-        case "exit":
-            break
-        case _:
-             print("Hey you entered wrong!")
-
-
-"""
