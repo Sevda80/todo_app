@@ -14,3 +14,9 @@ def get_todos(filepath=FILEPATH):
 def write_todos( todos_arg, filepath=FILEPATH):
     with open(filepath, 'w') as local_file:
         local_file.writelines(todos_arg)
+
+
+if __name__ == "__main__":
+    print('hello')
+    print(get_todos())
+
