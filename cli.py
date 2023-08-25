@@ -14,29 +14,14 @@ while True:
     if userAction.startswith('add'):
 
         todo = userAction[4:]
-        """
-        file = open('todos.txt', 'r')
-        todos = file.readlines()
-        file.close()
-        """
 
         todos = functions.get_todos()
 
         todos.append(todo + '\n')
-        """
-        file = open('todos.txt', 'w')
-        file.writelines(todos)
-        file.close()
-        """
 
         functions.write_todos(todos)
 
     elif userAction.startswith('show') or userAction.startswith('display'):
-        """
-        file = open('todos.txt', 'r')
-        todos = file.readlines()
-        file.close()
-        """
 
         todos = functions.get_todos()
 
@@ -100,14 +85,4 @@ while True:
 
     else:
         print("Command is not valid!")
-
-
-
-
-
-
-
-
-
-
-
+        
