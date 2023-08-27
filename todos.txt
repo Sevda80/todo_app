@@ -1,3 +1,4 @@
-write
 create
-hello
+help
+makewrite
+take
