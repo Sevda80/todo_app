@@ -1,6 +1,6 @@
-hello
-hi
-sevda
 clean
-master
-hello
+write
+open
+cook
+create
+
