@@ -1,6 +1,3 @@
-clean
 write
-open
-cook
 create
-
+hello
